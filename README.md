@@ -1,6 +1,6 @@
 # obsidian-plugin-deploy-content-to-anywhere
-obsidian 插件，把 md 的内容部署到任何地方
 
+obsidian 插件，把 md 的内容部署到任何地方
 
 ## 问题场景
 
@@ -19,6 +19,6 @@ obsidian 插件，把 md 的内容部署到任何地方
 允许用户自行扩展
 
 
-## tasking
-- [ ] 部署到 github repo issue  
-
+## 功能
+- 提交到 github issue 内
+	- 支持创建和更新

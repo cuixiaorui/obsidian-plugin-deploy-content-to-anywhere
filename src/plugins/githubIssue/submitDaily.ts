@@ -1,4 +1,5 @@
 import { Octokit } from "@octokit/core";
+import dayjs from "dayjs";
 
 let OWNER = "";
 let REPO = "";
@@ -59,7 +60,11 @@ export async function submitDaily({
   }
 
   function currentIssueName() {
-    return "【每日计划】 2021-12-25";
+    function getDate() {
+      return dayjs().format("YYYY-MM-DD");
+    }
+
+    return `【每日计划】 ${getDate()}`;
   }
 
   async function getCurrentIssueInfo(issueName: string) {
@@ -82,7 +87,7 @@ export async function submitDaily({
     if (!isCommented()) {
       addDailyContent(content);
     } else {
-      console.log(context)
+      console.log(context);
       updateDailyContent(content);
     }
   }

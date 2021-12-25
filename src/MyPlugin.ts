@@ -1,16 +1,15 @@
 import { Plugin } from "obsidian";
-import { githubIssue } from "./plugins/githubIssue";
+import {
+  githubIssue,
+  defaultSettings as githubIssueDefaultSettings,
+} from "./plugins/githubIssue";
 
 type DCTAPlugin = (main: MyPlugin) => void;
 
 const plugins: Array<DCTAPlugin> = [githubIssue];
 
 const DEFAULT_SETTINGS = {
-  githubIssue: {
-    token: "",
-    owner: "",
-    repo: "",
-  },
+  githubIssue: githubIssueDefaultSettings,
 };
 
 type MyPluginSettings = typeof DEFAULT_SETTINGS;
