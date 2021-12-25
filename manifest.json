@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-plugin-deploy-content-to-anywhere",
+  "name": "Deploy Content To Anywhere",
+  "version": "1.0.0",
+  "minAppVersion": "0.12.0",
+  "description": "deploy content to anywhere",
+  "author": "cuixiaorui",
+  "authorUrl": "https://github.com/cuixiaorui",
+  "isDesktopOnly": false
+}
