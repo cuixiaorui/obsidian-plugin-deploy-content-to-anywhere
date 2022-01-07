@@ -43,6 +43,7 @@ export class SettingTab extends PluginSettingTab {
             .setPlaceholder("Enter git username")
             .setValue(config.owner)
             .onChange(async (value) => {
+              value = value.trim()
               console.log("git username: " + value);
               config.owner = value;
               await plugin.saveSettings();
@@ -59,6 +60,7 @@ export class SettingTab extends PluginSettingTab {
             .setPlaceholder("Enter git repoName")
             .setValue(config.repo)
             .onChange(async (value) => {
+              value = value.trim()
               console.log("git repoName:" + value);
               config.repo = value;
               await plugin.saveSettings();
